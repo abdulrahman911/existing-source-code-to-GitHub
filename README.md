@@ -77,3 +77,17 @@ Push the changes in your local repository to GitHub.com.
 $ git push -u origin main
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 ```
+
+How do I properly force a Git push?
+```bash
+git push origin <your_branch_name> --force
+```
+or if you have a specific repo:
+```bash
+git push origin <your_branch_name> --force
+git push https://git.... --force
+
+This will delete your previous commit(s) and push your current one.
+
+It may not be proper, but if anyone stumbles upon this page, thought they might want a simple solution...
+```
